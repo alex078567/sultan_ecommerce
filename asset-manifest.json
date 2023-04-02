@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sultan_ecommerce/static/css/main.2482d264.css",
-    "main.js": "/sultan_ecommerce/static/js/main.c8309a57.js",
+    "main.css": "/sultan_ecommerce/static/css/main.ac20ae86.css",
+    "main.js": "/sultan_ecommerce/static/js/main.6ec12631.js",
     "static/media/header_tel-operator.png": "/sultan_ecommerce/static/media/header_tel-operator.316fa3c3c0dce2259725.png",
     "static/media/icon_cart.svg": "/sultan_ecommerce/static/media/icon_cart.7e3f10a67cbf7efab90673a8b0ccf897.svg",
     "static/media/icons_cart_white.svg": "/sultan_ecommerce/static/media/icons_cart_white.38d6d6b8821988191585d29c7f410a8d.svg",
@@ -24,11 +24,11 @@
     "static/media/icons_triangle_up.svg": "/sultan_ecommerce/static/media/icons_triangle_up.5e5d30daddeae7614a94f9346edb1e23.svg",
     "static/media/icons_arrow_down_black.svg": "/sultan_ecommerce/static/media/icons_arrow_down_black.90a0847e2609fe35eb180fd09df108b9.svg",
     "static/media/icons_arrow_up_black.svg": "/sultan_ecommerce/static/media/icons_arrow_up_black.80566af4e2a61f1f1d7b01637e2cc31d.svg",
-    "main.2482d264.css.map": "/sultan_ecommerce/static/css/main.2482d264.css.map",
-    "main.c8309a57.js.map": "/sultan_ecommerce/static/js/main.c8309a57.js.map"
+    "main.ac20ae86.css.map": "/sultan_ecommerce/static/css/main.ac20ae86.css.map",
+    "main.6ec12631.js.map": "/sultan_ecommerce/static/js/main.6ec12631.js.map"
   },
   "entrypoints": [
-    "static/css/main.2482d264.css",
-    "static/js/main.c8309a57.js"
+    "static/css/main.ac20ae86.css",
+    "static/js/main.6ec12631.js"
   ]
 }
