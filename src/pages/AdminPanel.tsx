@@ -4,6 +4,7 @@ import ItemInAdmin from '../components/ItemInAdmin';
 import AddEditItemModal from '../components/AddEditItemModal';
 import {
 	addToStore,
+	loadDataFromJson,
 	loadImagesFromDb,
 	showModalNewData,
 } from '../features/admin/adminSlice';
@@ -18,6 +19,9 @@ const AdminPanel = () => {
 		})
 	);
 	const dispatch = useAppDispatch();
+	useEffect(() => {
+		dispatch(loadDataFromJson());
+	}, [dispatch]);
 	useEffect(() => {
 		dispatch(loadImagesFromDb());
 	}, [dispatch, listOfItems]);

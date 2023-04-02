@@ -30,7 +30,7 @@ export default function Breadcrumbs() {
 			<li className="breadcrumbs__list-item" key={crumb}>
 				{isDynamicRoute ? (
 					<Link
-						to={`/catalogue/${location.state.barcode}`}
+						to={`/sultan_ecommerce/catalogue/${location.state.barcode}`}
 						className="breadcrumbs__link"
 						state={location.state}
 					>

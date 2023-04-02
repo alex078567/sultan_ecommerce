@@ -906,7 +906,7 @@ body {
 /* Компонент "Карточка товара"*/
 
 .item-card {
-	box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.96);
+	box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
 	color: $color-black-1;
 	padding: 4.2rem 2.3rem 2.9rem;
 	border-radius: 1rem;
@@ -1645,6 +1645,17 @@ body {
 
 	.footer-logo-column {
 		padding-right: 0.5rem;
+	}
+	.footer-logo-column__logo {
+		width: 9.7rem;
+		height: 4.1rem;
+		margin: 0;
+	}
+	.footer-logo-column__logo-button-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 1.5rem;
 	}
 	.button--footer {
 		display: none;

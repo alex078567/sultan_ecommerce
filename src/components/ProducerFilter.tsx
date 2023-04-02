@@ -1,9 +1,7 @@
 import InputWithButton from './InputWithButton';
 import iconSearch from '../assets/images/icon_search.png';
-import { useAppSelector } from '../hooks';
 import { ChangeEvent, useEffect, useState } from 'react';
 import iconTriangleDown from '../assets/images/icons_triangle_down.svg';
-import iconTriangleUp from '../assets/images/icons_triangle_up.svg';
 import Button from './Button';
 interface ProducerFilterProps {
 	handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
@@ -34,6 +32,7 @@ const ProducerFilter: React.FC<ProducerFilterProps> = ({
 			setCurrentList(filteredList.slice(0, 3));
 			setShowButton(true);
 		} else {
+			setCurrentList(filteredList);
 			setShowButton(false);
 		}
 	}, [filteredList]);

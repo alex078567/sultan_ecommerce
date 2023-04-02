@@ -1,11 +1,11 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { JsonProps } from '../../interfaces/globalInterfaces';
-import json from '../../data/goods.json';
+
 import { JsonPropsArray } from '../../interfaces/globalInterfaces';
 import {
 	getDataFromLocalStorage,
 	addDataToLocalStorage,
-	dataFromLocalStorage,
+	dataFromLocalStorageAdmin,
 } from '../../utils/localStorage';
 import { ImageDatabase } from '../../utils/indexedDbDexie';
 
@@ -83,13 +83,16 @@ const adminSlice = createSlice({
 	initialState,
 	reducers: {
 		loadDataFromJson: (state) => {
-			state.listOfItems = dataFromLocalStorage(json);
+			state.listOfItems = dataFromLocalStorageAdmin();
 		},
 		deleteFromList: (state, action: PayloadAction<string>) => {
 			const { payload } = action;
-			state.listOfItems = state.listOfItems.filter(
-				(item) => item.barcode !== payload
-			);
+			console.log(payload);
+
+			state.listOfItems = state.listOfItems.filter((item) => {
+				console.log(item);
+				return item.barcode !== payload;
+			});
 		},
 		addToStore: (state) => {
 			addDataToLocalStorage('cardItems', state.listOfItems);
