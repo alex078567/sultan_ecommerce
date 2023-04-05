@@ -1,0 +1,16 @@
+/*Компонент "боковая панель"*/
+
+.sidebar {
+	&__header {
+		font-weight: 500;
+		font-size: 1.6rem;
+		color: $color-black-1;
+		margin-bottom: 1rem;
+	}
+	&__button-container {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 4rem;
+	}
+}

@@ -1,0 +1,240 @@
+/*Компонент "кнопка" */
+
+.button {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	border: none;
+	padding: 2.2rem 5.4rem;
+	background-color: $color-ginger-1;
+	border-radius: 8rem;
+	line-height: 1.7rem;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		background-color: #cca04b;
+	}
+	&__icon {
+		display: block;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	&__icon-container {
+		width: fit-content;
+		height: fit-content;
+	}
+	&--price {
+		padding: 2.1rem 4.35rem;
+	}
+	&--price &__icon {
+		width: 1.7rem;
+		height: 1.7rem;
+	}
+	&--price-burger-menu {
+		padding: 2.65rem 8.85rem;
+	}
+	&--search {
+		padding: 1.15rem;
+		position: absolute;
+		top: 0.83rem;
+		right: 0.83rem;
+		transform: translate(0%, 0%);
+	}
+	&--search &__text {
+		display: none;
+	}
+	&--search &__icon {
+		width: 1.84rem;
+		height: 1.84rem;
+	}
+	&--mobile-nav-input {
+		padding: 0;
+		background: none;
+	}
+	&--mobile-nav-input &__text {
+		display: none;
+	}
+	&--mobile-nav-input &__icon {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	&--footer {
+		padding: 2.1rem 5rem;
+		margin-bottom: 2rem;
+	}
+	&--footer &__text {
+		white-space: nowrap;
+	}
+	&--footer &__icon {
+		width: 1.7rem;
+		height: 1.7rem;
+	}
+	&--footer-logo-column {
+		display: none;
+		padding: 1.25rem 2.95rem;
+	}
+	&--quantity-container {
+		padding: 0.4rem 1.4rem;
+		background: linear-gradient(
+			90deg,
+			rgba(255, 198, 80, 0.3) 0%,
+			rgba(254, 202, 110, 0.3) 97.25%
+		);
+		line-height: 1.25;
+		font-size: 1.2rem;
+		color: $color-gray-1;
+		font-weight: 300;
+	}
+	&--quantity-container &__icon-container {
+		display: none;
+	}
+	&--price-cart-container &__icon {
+		width: 2.3rem;
+		height: 2.3rem;
+		margin-top: -0.5rem;
+	}
+	&--price-cart-container &__text {
+		white-space: nowrap;
+	}
+	&--trash {
+		padding: 1.7rem;
+	}
+	&--trash &__text {
+		display: none;
+	}
+	&--trash &__icon {
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+	&--no-icon &__icon {
+		display: none;
+	}
+	&--no-icon {
+		padding: 2.1rem 5.1rem;
+	}
+	&--items-list-to-cart {
+		padding: 1rem 1.9rem;
+	}
+	&--items-list-to-cart-active {
+		background-color: $color-green-1;
+	}
+	&--items-list-to-cart-active &__icon {
+		display: none;
+	}
+	&--items-list-to-cart &__icon {
+		margin-top: -0.5rem;
+		height: 2.7rem;
+		width: 2.7rem;
+	}
+	&--items-list-to-cart &__text {
+		font-size: 1rem;
+		line-height: 1.2;
+		letter-spacing: 0.15em;
+	}
+	&--mobile-nav-1 {
+		padding: 1.2rem;
+	}
+	&--mobile-nav-1 &__text {
+		display: none;
+	}
+	&--mobile-nav-1 &__icon {
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+	&--mobile-nav-2 {
+		flex-direction: row-reverse;
+		gap: 0.6rem;
+		background: none;
+		padding: 0;
+	}
+	&--mobile-nav-2 &__text {
+		color: $color-gray-1;
+		font-size: 1.2rem;
+		line-height: 1.25;
+		font-weight: 600;
+	}
+	&--modal-caretype {
+		padding: 1rem;
+	}
+	&--modal-caretype &__text {
+		display: none;
+	}
+	&--modal-caretype &__icon {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+	&--modal-subtype {
+		padding: 0.8rem;
+	}
+	&--modal-subtype &__icon {
+		height: 1.2rem;
+		width: 1.2rem;
+	}
+	&--modal-add-subtype {
+		padding: 1rem 2rem;
+		justify-content: center;
+	}
+	&--modal-add-subtype &__icon-container {
+		display: none;
+	}
+	&--mobile-filters {
+		background: none;
+		padding: 0;
+		margin-bottom: 1.1rem;
+	}
+	&--mobile-filters:hover {
+		background-color: inherit;
+	}
+	&--mobile-filters &__text {
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: $color-black-1;
+	}
+	&--mobile-filters &__icon-container {
+		width: 3.2rem;
+		height: 3.2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba($color-ginger-1, 0.5);
+		border-radius: 50%;
+	}
+	&--mobile-filters &__icon {
+		height: 0.6rem;
+	}
+	&--thanks-for-order-modal {
+		background: none;
+		padding: 0.2rem;
+	}
+	&--thanks-for-order-modal &__text {
+		display: none;
+	}
+	&--card-description {
+		background: none;
+		padding: 0;
+		gap: 0.5rem;
+		margin-bottom: 1.5rem;
+	}
+	&--card-description-mt {
+		margin-top: 2rem;
+		margin-bottom: 0;
+	}
+	&--card-description:hover {
+		background-color: inherit;
+	}
+	&--card-description &__text {
+		font-weight: 500;
+		font-size: 1.6rem;
+		color: $color-black-1;
+	}
+	&--card-description &__icon {
+		width: 0.7rem;
+		height: 0.7rem;
+	}
+	&--card-description-producers &__text {
+		font-weight: 500;
+		font-size: 1.2rem;
+	}
+}

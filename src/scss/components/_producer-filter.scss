@@ -1,0 +1,24 @@
+/*Компонент "Фильтр по производителю"*/
+
+.producer-filter {
+	&__header {
+		font-weight: 500;
+		font-size: 1.6rem;
+		color: #111111;
+		margin-bottom: 1.5rem;
+	}
+
+	&__producer-list {
+		list-style: none;
+		margin-bottom: 1.5rem;
+	}
+	&__producer-list-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 0.5rem;
+	}
+	&__producer-list-item:last-child {
+		margin-bottom: 0;
+	}
+}

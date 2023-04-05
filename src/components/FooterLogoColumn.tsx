@@ -1,7 +1,7 @@
 import logo from '../assets/images/footer_logo.png';
 import InputWithButton from './InputWithButton';
 import iconArrowRight from '../assets/images/icons_arrow-right.svg';
-import iconDownload from '../assets/images/icons_download_white.png';
+import iconDownload from '../assets/images/icons_download_white.svg';
 import Button from './Button';
 
 const FooterLogoColumn = () => {

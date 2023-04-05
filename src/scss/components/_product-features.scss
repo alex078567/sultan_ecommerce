@@ -1,0 +1,23 @@
+/*Компонент "характеристики товара"*/
+
+.product-data {
+	margin-bottom: 3rem;
+	&__second {
+		margin-bottom: 0;
+		margin-top: 2rem;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__elem {
+		margin-bottom: 0.5rem;
+		font-weight: 300;
+	}
+	&__elem:last-child {
+		margin-bottom: 0;
+	}
+	&__elem-bold {
+		color: $color-black-1;
+		font-weight: 500;
+	}
+}

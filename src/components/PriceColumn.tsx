@@ -1,5 +1,5 @@
 import Button from './Button';
-import iconDownload from '../assets/images/icons_download_white.png';
+import iconDownload from '../assets/images/icons_download_white.svg';
 import iconWhatsApp from '../assets/images/icons_whatsapp.png';
 import iconTelegram from '../assets/images/icons_telegram.png';
 

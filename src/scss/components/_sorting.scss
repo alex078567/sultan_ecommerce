@@ -1,0 +1,22 @@
+/* Компонент "сортировка"*/
+
+.form-lowest-highest {
+	font-size: 1.6rem;
+	&__label {
+		color: $color-black-1;
+		font-weight: 500;
+		font-size: 1.6rem;
+		margin-right: 0.5rem;
+	}
+	&__select {
+		min-width: 15rem;
+		line-height: 1.5;
+		color: $color-gray-1;
+		border: none;
+		appearance: none;
+		background-image: url('../images/icons_triangle_down.svg');
+		background-repeat: no-repeat;
+		background-size: 0.7rem 0.7rem;
+		background-position: top 50% right 0rem;
+	}
+}

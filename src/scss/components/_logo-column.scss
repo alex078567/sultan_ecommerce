@@ -1,0 +1,15 @@
+/*Компонент "колонка с логотипом"*/
+
+.footer-logo-column {
+	color: $color-white-1;
+	margin-right: -3.6rem;
+	&__logo {
+		margin-bottom: 1.5rem;
+	}
+	&__text {
+		margin-bottom: 4.5rem;
+	}
+	&__input-description {
+		margin-bottom: 1.4rem;
+	}
+}

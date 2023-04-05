@@ -1,0 +1,43 @@
+/*Компонент "окно ввода с кнопкой"*/
+
+.input-with-button {
+	display: inline-block;
+	position: relative;
+	&__input {
+		width: 26.3rem;
+		font-size: 1.2rem;
+		color: #5c6370;
+		line-height: 1.5;
+		background-color: #ededed;
+		border-radius: 3.6rem;
+		border: none;
+		padding: 2rem;
+	}
+	&--footer {
+		display: block;
+		width: 87%;
+	}
+	&--footer &__input {
+		display: block;
+		width: 100%;
+	}
+	&--sidebar {
+		margin-bottom: 1.5rem;
+	}
+	&--mobile-nav {
+		background: none;
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	&--mobile-nav &__input {
+		background: none;
+		padding: 0;
+		width: 6.6rem;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1.25;
+	}
+}

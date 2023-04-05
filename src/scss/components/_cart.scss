@@ -1,0 +1,40 @@
+/* Компонент "корзина"*/
+
+.cart {
+	display: flex;
+	align-items: center;
+	gap: 2.4rem;
+	&__icon-container {
+		display: inline-block;
+		position: relative;
+	}
+	&__icon {
+		width: 4rem;
+		height: 2.9rem;
+	}
+	&__icon-quantity {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		background-color: $color-ginger-1;
+		font-weight: 700;
+		color: $color-white-1;
+		width: 2.5rem;
+		height: 2.5rem;
+		border: 3px solid $color-white-1;
+		border-radius: 50%;
+		top: 5px;
+		right: 0;
+		transform: translate(50%, -50%);
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 1.2rem;
+		line-height: 1.5;
+	}
+	&__price {
+		color: $color-black-1;
+		font-weight: 600;
+	}
+}

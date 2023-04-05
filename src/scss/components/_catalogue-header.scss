@@ -1,0 +1,18 @@
+/*Компонент "Заголовок страницы с каталогом"*/
+
+.catalogue-page {
+	&__header-container {
+		color: $color-black-1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 2.5rem;
+	}
+	&_header {
+		margin: 0;
+		font-weight: 500;
+		font-size: 4rem;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+}

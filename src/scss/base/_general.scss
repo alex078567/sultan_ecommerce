@@ -1,0 +1,236 @@
+*,
+*::after,
+*::before {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	font-weight: 400;
+	color: $color-gray-1;
+	background-color: $color-white-1;
+}
+
+/*Контейнеры*/
+
+.container {
+	padding: 0 5rem;
+	max-width: 147rem;
+	margin: 0 auto;
+}
+
+.main-container {
+	margin-bottom: 10rem;
+}
+
+.items-filters-container {
+	display: grid;
+	gap: 13.1rem;
+	grid-template-columns: 23.8rem 1fr;
+}
+
+.item-in-admin__price-quantity-container {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.navbar-container {
+	padding-top: 2.5rem;
+	&__header {
+		font-weight: 600;
+		font-size: 20px;
+		color: $color-gray-1;
+		margin-bottom: 2.5rem;
+	}
+}
+
+.modal-container {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.702);
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item-card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	&__cards {
+		display: grid;
+		gap: 2.1rem;
+		grid-template-columns: repeat(3, 1fr);
+		margin-bottom: 5rem;
+	}
+}
+
+.quantity-container {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+/*Компонент "корзина"*/
+
+.products-cart {
+	&__header {
+		margin: 0;
+		margin-bottom: 2rem;
+		line-height: 1.2;
+	}
+	&__items-list {
+		border-top: 1px dashed rgba($color-gray-1, 0.3);
+		list-style: none;
+		margin-bottom: 5rem;
+	}
+	&__checkout {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10rem;
+	}
+}
+
+/*Структурные части страниц*/
+
+/*Верхняя панель навигации*/
+
+.top-navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 6.2rem;
+	border-bottom: 1px solid rgba($color-gray-1, 0.2);
+	&__address {
+		display: flex;
+		gap: 4rem;
+	}
+}
+
+/* Панель навигации */
+
+.navbar {
+	&__list {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+		list-style: none;
+	}
+	&__list-item {
+		text-decoration: none;
+		align-self: stretch;
+		padding-right: 3rem;
+		border-right: 1px dashed rgba($color-gray-1, 0.1);
+	}
+	&__list-item:last-child {
+		padding-right: 0;
+		border-right: none;
+	}
+	&__list-anchor {
+		text-decoration: none;
+		color: $color-gray-1;
+	}
+	&--burger-menu &__list {
+		flex-direction: column;
+		gap: 2rem;
+		margin-bottom: 2.2rem;
+	}
+}
+
+/*Секция "header для мобильных устройств"*/
+
+.mobile-header {
+	&__top-panel {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 2px solid rgba($color-gray-1, 0.1);
+		height: 6.2rem;
+		padding: 0 1.5rem;
+	}
+	&__bottom-panel {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 2px solid rgba($color-gray-1, 0.1);
+		height: 4.1rem;
+		padding: 0 4.5rem;
+	}
+}
+
+/* header*/
+
+.header {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba($color-gray-1, 0.2);
+	margin-bottom: 4.5rem;
+	&__logo {
+		width: 15.6rem;
+		height: 6.6rem;
+		margin-right: 3.8rem;
+	}
+	&__resize-wrapper {
+		display: flex;
+		gap: 1.5rem;
+	}
+	&__resize-wrapper--cart {
+		gap: 5rem;
+	}
+	&__resize-wrapper--search {
+		margin-right: 3.5rem;
+		margin: 1.6rem;
+	}
+	&__tel-operator {
+		width: 7rem;
+		height: 9.2rem;
+		margin-right: 5rem;
+	}
+}
+
+/*mobile-header*/
+
+.mobile-header {
+	display: none;
+	margin-bottom: 2rem;
+	&__logo {
+		width: 9.7rem;
+		height: 4.1rem;
+	}
+}
+
+/*footer*/
+
+.footer {
+	background-color: $color-gray-1;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	gap: 9.5rem;
+	padding: 7.1rem;
+	flex-wrap: wrap;
+}
+
+/* Отключение компонентов которые появляются 
+при использовании сайта на мобильном устройстве */
+.mobile-filters {
+	display: none;
+}
+.top-caretypes--mobile {
+	display: none;
+}

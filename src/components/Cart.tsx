@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import iconCart from '../assets/images/icon_cart.svg';
+import iconCart from '../assets/images/icons_cart.svg';
 import { useAppSelector } from '../hooks';
 
 const Cart: React.FC = () => {

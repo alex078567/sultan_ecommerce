@@ -1,0 +1,47 @@
+/*Компонент "адрес"*/
+
+.address {
+	font-style: normal;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	&__icon {
+		width: 2rem;
+		height: 2rem;
+	}
+	&__link:link,
+	&__link:visited {
+		text-decoration: none;
+		font-weight: 600;
+		line-height: 1.82rem;
+		color: $color-black-1;
+		transition: all 0.3s;
+	}
+	&__link:hover,
+	&__link:active {
+		color: #707070;
+	}
+	&__additional-text {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		color: $color-gray-1;
+		font-weight: 300;
+	}
+	&--footer {
+		margin-bottom: 2.5rem;
+	}
+	&--footer &__icon {
+		display: none;
+	}
+	&--footer &__link:link,
+	&--footer &__link:visited {
+		color: $color-white-1;
+	}
+	&--footer &__link:hover,
+	&--footer &__link:active {
+		color: #707070;
+	}
+	&--footer &__additional-text {
+		color: $color-white-1;
+	}
+}

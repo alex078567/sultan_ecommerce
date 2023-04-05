@@ -1,6 +1,6 @@
 import Address from './Address';
 import TelNumber from './TelNumber';
-import mailIcon from '../assets/images/icons_mail.png';
+import mailIcon from '../assets/images/icons_mail.svg';
 import visaIcon from '../assets/images/icons_visa.png';
 import mastercardIcon from '../assets/images/icons_mastercard.png';
 

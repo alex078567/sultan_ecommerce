@@ -1,0 +1,57 @@
+/*Компонет "карточка товара для корзины и для панели администратора"*/
+
+.item-in-cart {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5rem 0;
+	border-bottom: 1px dashed rgba($color-gray-1, 0.3);
+	&__img {
+		max-height: 19.7rem;
+		max-width: 28.1rem;
+	}
+	&__img-description-container {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+	&__description {
+		max-width: 46rem;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 1rem;
+	}
+	&__header {
+		color: $color-black-1;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.4rem;
+	}
+	&__description {
+		font-weight: 300;
+		font-size: 1.2rem;
+	}
+	&__price-quantity-delete-container {
+		display: flex;
+		align-items: center;
+		gap: 4.4rem;
+	}
+	&__price-quantity-container {
+		display: flex;
+		align-items: center;
+		gap: 4.4rem;
+	}
+	&__price-container {
+		display: flex;
+		align-items: center;
+		gap: 4.4rem;
+		padding-right: 4.4rem;
+		border-right: 1px dashed rgba($color-gray-1, 0.3);
+	}
+	&__price-quantity-container > * {
+		align-self: stretch;
+		padding-left: 4.4rem;
+		border-left: 1px dashed rgba($color-gray-1, 0.3);
+	}
+}

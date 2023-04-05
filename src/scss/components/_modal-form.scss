@@ -1,0 +1,93 @@
+/*Компонент "форма добавления и редактирования товара"*/
+
+.modal-form {
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	background: #fff;
+	width: 80vw;
+	height: 80vh;
+	max-width: 40rem;
+	border-radius: 1.6rem;
+	padding: 3.6rem 1.6rem;
+	text-align: center;
+	&-label {
+		display: block;
+		font-size: 1.8rem;
+		margin-bottom: 0.8rem;
+		text-transform: capitalize;
+		letter-spacing: 0.1rem;
+	}
+	&-input {
+		width: 100%;
+		font-size: 1.6rem;
+		padding: 0.6rem 1.2rem;
+		border-radius: 0.4rem;
+		background: #f0f4f8;
+		border: 1px solid #bcccdc;
+	}
+	&__file-input {
+		padding: 1.2rem 1.6rem;
+		background-color: #ffc85e;
+		border-radius: 8rem;
+		line-height: 1.7rem;
+		color: white;
+		font-weight: 700;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+	&__file-input:hover {
+		background-color: #cca04b;
+	}
+	&__image-preview {
+		margin-top: 2rem;
+		position: relative;
+		background-color: transparent;
+		outline: 1px dashed #000;
+		outline-offset: -1px;
+		width: 10rem;
+		height: 14rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__image-preview > img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: 10;
+	}
+	&__image-preview-text {
+		font-size: 1rem;
+	}
+	&__subtype-input-label-container {
+		margin-top: 1.6rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__subtype-input-label {
+		font-weight: 600;
+	}
+	&__subtype-input-container {
+		display: flex;
+		align-items: center;
+	}
+	&__type-input-label {
+		font-weight: 600;
+		font-size: 1.6rem;
+	}
+	&__type-input {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	&-input--care-sub-type {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-right: 1rem;
+		width: 80%;
+		font-weight: 400;
+		font-size: 1.4rem;
+	}
+}

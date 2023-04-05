@@ -1,0 +1,24 @@
+/*Компонент "хлебные крошки(breadcrumbs)"*/
+
+.breadcrumbs {
+	margin-bottom: 5rem;
+	&__list {
+		display: flex;
+		list-style: none;
+		flex-wrap: wrap;
+	}
+	&__list-item {
+		margin-right: 1rem;
+		border-right: 1px dashed rgba($color-gray-1, 0.3);
+	}
+	&__list-item:last-child {
+		border-right: none;
+		opacity: 0.5;
+	}
+	&__link {
+		min-width: 14.5rem;
+		margin-right: 1rem;
+		text-decoration: none;
+		color: $color-gray-1;
+	}
+}

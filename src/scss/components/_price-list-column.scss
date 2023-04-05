@@ -1,0 +1,22 @@
+/*Компонент "колонка прайс-лист"*/
+
+.price-column {
+	color: $color-white-1;
+	&__header {
+		font-size: 2rem;
+		font-weight: 600;
+		margin-bottom: 2.5rem;
+	}
+	&__icons-header {
+		margin-bottom: 1.5rem;
+	}
+	&__icons-list {
+		display: flex;
+		gap: 1rem;
+		list-style: none;
+	}
+	&__icon-img {
+		width: 3.9rem;
+		height: 3.9rem;
+	}
+}

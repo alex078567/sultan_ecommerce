@@ -1,0 +1,117 @@
+/*Компонент "телефон" (телефон, время работы, заказать звонок)*/
+
+.telephone {
+	font-style: normal;
+	line-height: 1.5;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: end;
+	gap: 0.5rem;
+	&__department {
+		color: $color-black-1;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	&__number-container {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+	}
+	&__callback-container {
+		display: flex;
+		align-items: center;
+		gap: 0.7rem;
+	}
+	&__tel-img-stroke {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+	&__tel-img-white-container {
+		background-color: $color-ginger-1;
+		padding: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+	}
+	&__tel-img-white {
+		width: 1rem;
+		height: 1rem;
+	}
+	&__number:link,
+	&__number:visited {
+		text-decoration: none;
+		font-weight: 600;
+		color: $color-black-1;
+	}
+	&__number:hover,
+	&__number:active {
+		color: #707070;
+	}
+	&__working-hours {
+		display: inline-block;
+		font-weight: 300;
+		font-size: 1.2rem;
+	}
+	&__link:link,
+	&__link:visited {
+		font-weight: 400;
+		font-size: 1rem;
+		color: $color-gray-1;
+	}
+	&__link:hover,
+	&__link:active {
+		color: #8c95a3;
+	}
+	&--header {
+		margin-right: 1.4rem;
+		margin-top: 2.15rem;
+		margin-bottom: 2.25rem;
+	}
+	&--footer {
+		align-items: start;
+		margin-bottom: 2.5rem;
+	}
+	&--footer &__number:link,
+	&--footer &__number:visited {
+		text-decoration: none;
+		font-weight: 600;
+		color: $color-white-1;
+	}
+	&--footer &__number:hover,
+	&--footer &__number:active {
+		color: #707070;
+	}
+	&--footer &__link:link,
+	&--footer &__link:visited {
+		font-weight: 400;
+		font-size: 1rem;
+		color: $color-white-1;
+	}
+	&--footer &__link:hover,
+	&--footer &__link:active {
+		color: #8c95a3;
+	}
+	&--mobile-burger {
+		align-items: start;
+	}
+	&--mobile-burger &__working-hours {
+		margin-bottom: 0.8rem;
+	}
+	&--mobile-burger &__working-hours {
+		margin-left: 3.4rem;
+	}
+	&--mobile-burger &__number:link,
+	&--mobile-burger &__number:visited {
+		text-decoration: none;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 1.3;
+		color: $color-gray-1;
+	}
+	&--mobile-burger &__number:hover,
+	&--mobile-burger &__number:active {
+		color: #8c95a3;
+	}
+}

@@ -1,0 +1,27 @@
+/*Компонент "Типы ухода верхняя панель"*/
+
+.top-caretypes {
+	margin-bottom: 5rem;
+	overflow-x: auto;
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 1.1rem;
+		list-style: none;
+	}
+	&__button {
+		cursor: pointer;
+		height: 7rem;
+		max-width: 12rem;
+		color: $color-gray-1;
+		box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+		border-radius: 10px;
+		line-height: 1.7rem;
+		padding: 1rem;
+		background: none;
+		border: none;
+	}
+	&__button-active {
+		background-color: $color-ginger-1;
+	}
+}

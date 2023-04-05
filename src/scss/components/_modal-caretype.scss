@@ -1,0 +1,17 @@
+/*Компонент "редактирование типов и подтипов ухода"*/
+.modal__caretype {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	&-header {
+		font-weight: 600;
+		font-size: 1.5rem;
+	}
+	&-header--subtype {
+		text-align: start;
+	}
+	&--subtype {
+		margin-left: 8.94rem;
+		margin-bottom: 1rem;
+	}
+}

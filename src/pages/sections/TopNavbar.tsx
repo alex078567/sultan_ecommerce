@@ -1,7 +1,7 @@
 import Address from '../../components/Address';
 import Navbar from '../../components/Navbar';
-import locationIcon from '../../assets/images/icons_location.png';
-import mailIcon from '../../assets/images/icons_mail.png';
+import locationIcon from '../../assets/images/icons_location.svg';
+import mailIcon from '../../assets/images/icons_mail.svg';
 
 const TopNavbar: React.FC = () => {
 	return (

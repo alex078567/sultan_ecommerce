@@ -1,5 +1,5 @@
 import InputWithButton from './InputWithButton';
-import iconSearch from '../assets/images/icon_search.png';
+import iconSearch from '../assets/images/icons_search.svg';
 import { ChangeEvent, useEffect, useState } from 'react';
 import iconTriangleDown from '../assets/images/icons_triangle_down.svg';
 import Button from './Button';

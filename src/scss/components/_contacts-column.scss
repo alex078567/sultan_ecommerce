@@ -1,0 +1,20 @@
+/*Компонент "колонка контакты"*/
+
+.contacts-column {
+	color: $color-white-1;
+	flex-shrink: 0;
+	&__header {
+		font-weight: 600;
+		font-size: 2rem;
+		margin-bottom: 2.5rem;
+	}
+	&__icons-list {
+		list-style: none;
+		display: flex;
+		gap: 0.5rem;
+	}
+	&__icon-img {
+		width: 6.1rem;
+		height: 3.9rem;
+	}
+}
