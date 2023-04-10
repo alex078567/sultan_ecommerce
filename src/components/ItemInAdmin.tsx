@@ -12,7 +12,6 @@ interface ItemInAdminProp {
 	imgUrl: string;
 	sizeType: string;
 	size: number;
-	price: number;
 	barcode: string;
 	name: string;
 	description: string;
@@ -22,7 +21,6 @@ const ItemInAdmin: React.FC<ItemInAdminProp> = ({
 	imgUrl,
 	sizeType,
 	size,
-	price,
 	barcode,
 	name,
 	description,

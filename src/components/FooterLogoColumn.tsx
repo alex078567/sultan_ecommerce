@@ -16,13 +16,13 @@ const FooterLogoColumn = () => {
 					/>
 				</a>
 				<Button
-					additionalClass=" button--footer-logo-column"
+					additionalClass="button--footer-logo-column"
 					text="Прайс-лист"
 					icon={iconDownload}
 				/>
 			</div>
 			<p className="footer-logo-column__text">
-				Компания «Султан» — снабжаем <br /> розничные магазины товарами <br />{' '}
+				Компания «Султан» — снабжаем <br /> розничные магазины товарами <br />
 				"под ключ" в Кокчетаве и Акмолинской области
 			</p>
 			<p className="footer-logo-column__input-description">

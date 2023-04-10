@@ -5,7 +5,7 @@ import SortPriceName from '../components/SortPriceName';
 import { useAppDispatch, useAppSelector } from '../hooks';
 import FiltersMobile from '../components/FiltersMobile';
 import SortCareTypeTopMobile from '../components/SortCareTypeTopMobile';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { loadImagesFromDb } from '../features/catalogue/catalogueSlice';
 
 const CataloguePage = () => {
@@ -22,9 +22,9 @@ const CataloguePage = () => {
 		useState(listOfItems);
 	const [isFiltersSubmitted, setIsFiltersSubmitted] = useState(false);
 
-	const changeCareTypesData = () => {
+	const changeCareTypesData = useCallback(() => {
 		setListOfItemsForCareTypes(listOfItems);
-	};
+	}, [listOfItems]);
 
 	const setIsFiltersSubmittedTrue = () => {
 		setIsFiltersSubmitted(true);
@@ -35,7 +35,7 @@ const CataloguePage = () => {
 			changeCareTypesData();
 			setIsFiltersSubmitted(false);
 		}
-	}, [listOfItems]);
+	}, [changeCareTypesData, isFiltersSubmitted, listOfItems]);
 
 	const arr = listOfItemsForCareTypes;
 	const careTypesArray = arr.map((item) => item.careType);

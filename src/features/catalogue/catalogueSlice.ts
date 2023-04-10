@@ -87,9 +87,6 @@ const catalogueSlice = createSlice({
 			state.listOfItems = initialState.listOfItems.filter(
 				(item) => item.price > state.priceMin && item.price < state.priceMax
 			);
-			console.log('all filters');
-
-			console.log(state.listOfItems);
 
 			if (state.producers.length > 0) {
 				state.listOfItems = state.listOfItems.filter((item) => {
@@ -99,7 +96,7 @@ const catalogueSlice = createSlice({
 					return false;
 				});
 			}
-			console.log(state.listOfItems);
+
 			if (state.careTypesFilter.length > 0) {
 				state.listOfItems = state.listOfItems.filter((item) => {
 					const careTypesArray = item.careType
@@ -112,7 +109,7 @@ const catalogueSlice = createSlice({
 					);
 				});
 			}
-			console.log(state.listOfItems);
+
 			switch (state.filter) {
 				case 'a-z':
 					state.listOfItems = state.listOfItems.sort(

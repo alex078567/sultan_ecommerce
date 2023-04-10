@@ -87,10 +87,8 @@ const adminSlice = createSlice({
 		},
 		deleteFromList: (state, action: PayloadAction<string>) => {
 			const { payload } = action;
-			console.log(payload);
 
 			state.listOfItems = state.listOfItems.filter((item) => {
-				console.log(item);
 				return item.barcode !== payload;
 			});
 		},

@@ -13,11 +13,9 @@ import Button from './Button';
 const AddEditItemModal = () => {
 	const fileInputRef = useRef<HTMLInputElement>(null);
 	const dispatch = useAppDispatch();
-
 	const { listOfItems, barcodeForEdit, images } = useAppSelector(
 		(store) => store.admin
 	);
-
 	const imagesMap = new Map(
 		images.map((image) => {
 			return [image.barcode, image.img];
@@ -39,12 +37,11 @@ const AddEditItemModal = () => {
 
 	const emptyArrayForCareTypes = Array(10).fill('');
 	const [mouseDownOnModal, setMouseDownOnModal] = useState(false);
+	const [careType, setCareType] = useState('');
 
 	const [subCareType, setSubCareType] = useState<string[]>(
 		emptyArrayForCareTypes
 	);
-
-	const [careType, setCareType] = useState('');
 
 	const itemForEdit =
 		barcodeForEdit === '00000000'
@@ -79,11 +76,6 @@ const AddEditItemModal = () => {
 		setItemData({ ...itemData, careType: newItemDataCareType });
 	};
 
-	const clearFormFields = () => {
-		setItemData(emptyItemData);
-		setImgData('');
-	};
-
 	const setSubCareTypeArray = (
 		careTypeIndex: number,
 		value: HTMLInputElement['value']
@@ -112,12 +104,6 @@ const AddEditItemModal = () => {
 		setSubCareType(Array(10).fill(''));
 	};
 
-	const closeModalDispatch = () => {
-		document.body.style.overflow = 'unset';
-		dispatch(closeModal());
-		clearFormFields();
-	};
-
 	const deleteCareType = (index: number) => {
 		const newItemData = [
 			...itemData.careType.slice(index + 1),
@@ -132,6 +118,17 @@ const AddEditItemModal = () => {
 			...itemData.careType[careTypeIndex].subtypes.slice(0, index),
 		];
 		insertNewCareType(careTypeIndex, newItemData);
+	};
+
+	const clearFormFields = () => {
+		setItemData(emptyItemData);
+		setImgData('');
+	};
+
+	const closeModalDispatch = () => {
+		document.body.style.overflow = 'unset';
+		dispatch(closeModal());
+		clearFormFields();
 	};
 
 	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -370,7 +367,7 @@ const AddEditItemModal = () => {
 						required
 					/>
 					<label className="modal-form-label" htmlFor="brand">
-						бренд
+						Бренд
 					</label>
 					<input
 						className="modal-form-input"

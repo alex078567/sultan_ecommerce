@@ -78,12 +78,12 @@ const SidebarFilters: React.FC<SidebarFiltersProps> = ({
 	};
 
 	const handleClick = () => {
-		setFormData(defaultFormData);
 		if (formRef.current) {
 			formRef.current.reset();
-			setFilteredList(uniqueProducersAndProducts);
-			dispatch(careTypeFilter(''));
 		}
+		setFormData(defaultFormData);
+		setFilteredList(uniqueProducersAndProducts);
+		dispatch(careTypeFilter(''));
 	};
 
 	const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
