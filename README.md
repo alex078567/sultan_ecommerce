@@ -2,11 +2,7 @@
 
 ##### Демо-версия (netlify): [Интернет магазин](https://alex078567.github.io/sultan_ecommerce/)
 
-##### Демо-версия (netlify): [Интернет магазин](https://alex078567.github.io/sultan_ecommerce/)
-
 ### ! Header и Footer страницы не работают (активна только корзина в header)
-
-### Header и Footer страницы не работают (активна только корзина в header)
 
 ### !! Панель администратора находится по адресу /admin
 
